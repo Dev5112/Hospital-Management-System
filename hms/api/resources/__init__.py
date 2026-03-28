@@ -1,1 +1,0 @@
-"""API resources package."""
