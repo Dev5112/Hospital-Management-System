@@ -1,0 +1,221 @@
+# Hospital Management System - New Features Requirements
+# Install all dependencies for 15 cutting-edge HMS features
+# Python 3.11+ required
+
+# ============================================================================
+# CORE DEPENDENCIES
+# ============================================================================
+
+# Anthropic Claude API
+anthropic==0.32.0
+
+# Web Framework
+Flask==3.0.0
+Flask-JWT-Extended==4.5.3
+Werkzeug==3.0.1
+
+# Database
+sqlite3  # Built-in
+
+# ============================================================================
+# ARTIFICIAL INTELLIGENCE & ML
+# ============================================================================
+
+# Speech Recognition (Feature 01: Ambient Scribe)
+openai-whisper==20231117
+
+# Audio Processing
+librosa==0.10.0
+soundfile==0.12.1
+
+# Neural Networks & Deep Learning
+torch==2.1.2
+torchvision==0.16.2
+numpy==1.24.3
+scipy==1.11.4
+
+# Specialized ML Models
+torchxrayvision==1.0.1  # Feature 15: X-ray analysis
+
+# Anomaly Detection
+scikit-learn==1.3.2
+
+# Explainability
+shap==0.44.0
+
+# Time Series Forecasting
+statsmodels==0.14.1
+pmdarima==2.0.4  # Auto-ARIMA
+
+# NLP & Sentiment Analysis
+transformers==4.37.0
+tokenizers==0.15.0
+sentencepiece==0.1.99
+
+# Language Detection
+langdetect==1.0.9
+
+# ============================================================================
+# HEALTHCARE STANDARDS & INTEROPERABILITY
+# ============================================================================
+
+# FHIR R4 Support
+fhir.resources==7.0.2
+
+# ============================================================================
+# AUTHENTICATION & SECURITY
+# ============================================================================
+
+# Password Hashing
+bcrypt==4.1.2
+
+# JWT Tokens
+PyJWT==2.8.1
+
+# Environment Variables
+python-dotenv==1.0.0
+
+# ============================================================================
+# COMMUNICATIONS
+# ============================================================================
+
+# SMS (Feature 07: Patient Portal)
+twilio==8.10.0
+
+# ============================================================================
+# DOCUMENT GENERATION
+# ============================================================================
+
+# PDF Generation
+fpdf2==2.7.6
+Pillow==10.2.0
+
+# JSON Processing
+simplejson==3.19.3
+
+# ============================================================================
+# TASK SCHEDULING & ASYNC
+# ============================================================================
+
+# Background Scheduling
+APScheduler==3.10.4
+
+# ============================================================================
+# DATA PROCESSING & UTILITIES
+# ============================================================================
+
+# Data Manipulation
+pandas==2.1.3
+
+# Configuration Management
+pydantic==2.5.2
+
+# Date/Time Utilities
+python-dateutil==2.8.2
+
+# ============================================================================
+# DEVELOPMENT & TESTING
+# ============================================================================
+
+# WSGI Server
+gunicorn==21.2.0
+
+# Development
+flask-cors==4.0.0
+
+# Logging
+python-json-logger==2.0.8
+
+# ============================================================================
+# OPTIONAL: OPTIMIZATION & PERFORMANCE
+# ============================================================================
+
+# Linear Optimization for Scheduling
+ortools==9.9.3963
+
+# ============================================================================
+# INSTALLATION INSTRUCTIONS
+# ============================================================================
+#
+# Standard Installation:
+#   pip install -r requirements_new_features.txt
+#
+# With Poetry (recommended for production):
+#   poetry install
+#
+# With Conda:
+#   conda env create -f environment.yml
+#   conda activate hms-features
+#
+# GPU Support (optional, for faster ML):
+#   pip install torch --index-url https://download.pytorch.org/whl/cu118
+#
+# ============================================================================
+# ENVIRONMENT SETUP
+# ============================================================================
+#
+# Create .env file in project root:
+#
+#   ANTHROPIC_API_KEY=sk-ant-xxxxx
+#   FLASK_ENV=development
+#   FLASK_DEBUG=1
+#   FLASK_PORT=5000
+#   DATABASE_PATH=hms_database.db
+#   TWILIO_ACCOUNT_SID=ACxxxxx
+#   TWILIO_AUTH_TOKEN=xxxxx
+#   TWILIO_PHONE_NUMBER=+1234567890
+#   UPLOAD_FOLDER=uploads
+#   MAX_FILE_SIZE=104857600
+#
+# ============================================================================
+# POST-INSTALLATION
+# ============================================================================
+#
+# 1. Initialize database schema:
+#    python -c "from features.database_init import init_features; init_features('hms_database.db')"
+#
+# 2. Test imports:
+#    python -c "from features.register_blueprints import register_all_blueprints; print('✓ All blueprints loaded')"
+#
+# 3. Run Flask app with all features:
+#    python app.py
+#
+# ============================================================================
+# TROUBLESHOOTING
+# ============================================================================
+#
+# If torch installation fails:
+#   pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+#
+# If whisper fails to install:
+#   brew install ffmpeg  # macOS
+#   apt-get install ffmpeg  # Ubuntu/Debian
+#
+# If FHIR resources fails:
+#   pip install --upgrade fhir.resources
+#
+# ============================================================================
+# FEATURE-SPECIFIC NOTES
+# ============================================================================
+#
+# Feature 01 (Ambient Scribe):
+#   - Requires ffmpeg for audio processing
+#   - GPU recommended for real-time transcription
+#
+# Features 03, 06, 09, 10, 13 (ML-heavy):
+#   - CUDA-enabled GPU recommended for production
+#   - CPU-only mode supported but slower
+#
+# Feature 05 (FHIR):
+#   - Validates against FHIR R4 schemas
+#   - Ensures HL7 standard compliance
+#
+# Feature 07 (Patient Portal):
+#   - Requires Twilio account for SMS
+#   - SMS optional if not configured
+#
+# Feature 15 (Image Diagnosis):
+#   - Supports JPEG, PNG, and DICOM formats
+#   - Requires medical image access permissions
+#
+# ============================================================================

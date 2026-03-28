@@ -1,0 +1,333 @@
+{
+  "patients": [
+    {
+      "patient_id": 1,
+      "name": "Rajesh Kumar",
+      "dob": "1985-03-15",
+      "gender": "M",
+      "phone": "9876543210",
+      "address": "123 Main St, Delhi",
+      "blood_group": "O+",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "patient_id": 2,
+      "name": "Priya Singh",
+      "dob": "1990-07-22",
+      "gender": "F",
+      "phone": "9876543211",
+      "address": "456 Oak Ave, Mumbai",
+      "blood_group": "A+",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "patient_id": 3,
+      "name": "Amit Patel",
+      "dob": "1978-11-08",
+      "gender": "M",
+      "phone": "9876543212",
+      "address": "789 Pine Rd, Bangalore",
+      "blood_group": "B+",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "patient_id": 4,
+      "name": "Neha Sharma",
+      "dob": "1988-05-30",
+      "gender": "F",
+      "phone": "9876543213",
+      "address": "321 Elm St, Pune",
+      "blood_group": "AB-",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "patient_id": 5,
+      "name": "Vijay Desai",
+      "dob": "1995-02-14",
+      "gender": "M",
+      "phone": "9876543214",
+      "address": "654 Birch Ln, Hyderabad",
+      "blood_group": "O-",
+      "created_at": "2026-03-27 20:06:38"
+    }
+  ],
+  "doctors": [
+    {
+      "doctor_id": 1,
+      "name": "Dr. Arjun Verma",
+      "specialization": "Cardiology",
+      "phone": "8765432101",
+      "email": "arjun.verma@hospital.com",
+      "available_days": "Mon-Sat",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "doctor_id": 2,
+      "name": "Dr. Lakshmi Nair",
+      "specialization": "Neurology",
+      "phone": "8765432102",
+      "email": "lakshmi.nair@hospital.com",
+      "available_days": "Mon-Fri",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "doctor_id": 3,
+      "name": "Dr. Suresh Iyer",
+      "specialization": "Orthopedics",
+      "phone": "8765432103",
+      "email": "suresh.iyer@hospital.com",
+      "available_days": "Tue-Sat",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "doctor_id": 4,
+      "name": "Dr. Meera Das",
+      "specialization": "Pediatrics",
+      "phone": "8765432104",
+      "email": "meera.das@hospital.com",
+      "available_days": "Mon-Thu",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "doctor_id": 5,
+      "name": "Dr. Rohan Gupta",
+      "specialization": "General Practice",
+      "phone": "8765432105",
+      "email": "rohan.gupta@hospital.com",
+      "available_days": "Mon-Fri",
+      "created_at": "2026-03-27 20:06:38"
+    }
+  ],
+  "appointments": [
+    {
+      "appointment_id": 1,
+      "patient_id": 1,
+      "doctor_id": 1,
+      "appointment_date": "2026-03-30",
+      "time_slot": "10:00 AM",
+      "status": "scheduled",
+      "notes": "Regular checkup",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "appointment_id": 2,
+      "patient_id": 2,
+      "doctor_id": 2,
+      "appointment_date": "2026-03-31",
+      "time_slot": "02:30 PM",
+      "status": "scheduled",
+      "notes": "Follow-up consultation",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "appointment_id": 3,
+      "patient_id": 3,
+      "doctor_id": 3,
+      "appointment_date": "2026-03-29",
+      "time_slot": "11:00 AM",
+      "status": "completed",
+      "notes": "Post-surgery review",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "appointment_id": 4,
+      "patient_id": 4,
+      "doctor_id": 4,
+      "appointment_date": "2026-04-02",
+      "time_slot": "03:00 PM",
+      "status": "scheduled",
+      "notes": "Pediatric consultation",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "appointment_id": 5,
+      "patient_id": 5,
+      "doctor_id": 5,
+      "appointment_date": "2026-03-28",
+      "time_slot": "04:00 PM",
+      "status": "scheduled",
+      "notes": "General health check",
+      "created_at": "2026-03-27 20:06:38"
+    }
+  ],
+  "wards": [
+    {
+      "ward_id": 1,
+      "ward_name": "General Ward A",
+      "ward_type": "general",
+      "total_beds": 30,
+      "available_beds": 15
+    },
+    {
+      "ward_id": 2,
+      "ward_name": "General Ward B",
+      "ward_type": "general",
+      "total_beds": 25,
+      "available_beds": 10
+    },
+    {
+      "ward_id": 3,
+      "ward_name": "ICU Ward",
+      "ward_type": "ICU",
+      "total_beds": 10,
+      "available_beds": 2
+    },
+    {
+      "ward_id": 4,
+      "ward_name": "Private Ward",
+      "ward_type": "private",
+      "total_beds": 8,
+      "available_beds": 4
+    },
+    {
+      "ward_id": 5,
+      "ward_name": "Pediatric Ward",
+      "ward_type": "general",
+      "total_beds": 20,
+      "available_beds": 8
+    }
+  ],
+  "admissions": [
+    {
+      "admission_id": 1,
+      "patient_id": 1,
+      "ward_id": 1,
+      "doctor_id": 1,
+      "admission_date": "2026-03-23 01:36:38.311702",
+      "discharge_date": "2026-03-26 01:36:38.311705",
+      "diagnosis": "Hypertension management",
+      "status": "discharged"
+    },
+    {
+      "admission_id": 2,
+      "patient_id": 2,
+      "ward_id": 2,
+      "doctor_id": 3,
+      "admission_date": "2026-03-27 01:36:38.311705",
+      "discharge_date": null,
+      "diagnosis": "Migraine treatment",
+      "status": "admitted"
+    },
+    {
+      "admission_id": 3,
+      "patient_id": 3,
+      "ward_id": 3,
+      "doctor_id": 2,
+      "admission_date": "2026-03-18 01:36:38.311706",
+      "discharge_date": "2026-03-21 01:36:38.311707",
+      "diagnosis": "Orthopedic surgery recovery",
+      "status": "discharged"
+    }
+  ],
+  "billing": [
+    {
+      "bill_id": 1,
+      "patient_id": 1,
+      "admission_id": 1,
+      "total_amount": 15000,
+      "paid_amount": 15000,
+      "payment_status": "paid",
+      "payment_date": "2026-03-26 01:36:38.311782",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "bill_id": 2,
+      "patient_id": 2,
+      "admission_id": 2,
+      "total_amount": 8500,
+      "paid_amount": 5000,
+      "payment_status": "partial",
+      "payment_date": "2026-03-27 01:36:38.311784",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "bill_id": 3,
+      "patient_id": 3,
+      "admission_id": 3,
+      "total_amount": 45000,
+      "paid_amount": 0,
+      "payment_status": "pending",
+      "payment_date": null,
+      "created_at": "2026-03-27 20:06:38"
+    }
+  ],
+  "staff": [
+    {
+      "staff_id": 1,
+      "name": "Nurse Asha Sharma",
+      "role": "Nurse",
+      "department": "ICU",
+      "phone": "7654321001",
+      "shift": "morning",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "staff_id": 2,
+      "name": "Nurse Ravi Kumar",
+      "role": "Nurse",
+      "department": "General Ward",
+      "phone": "7654321002",
+      "shift": "evening",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "staff_id": 3,
+      "name": "Dr. Support Patel",
+      "role": "Attendant",
+      "department": "General Ward",
+      "phone": "7654321003",
+      "shift": "night",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "staff_id": 4,
+      "name": "Lab Tech Priya",
+      "role": "Lab Technician",
+      "department": "Laboratory",
+      "phone": "7654321004",
+      "shift": "morning",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "staff_id": 5,
+      "name": "Admin Rajesh",
+      "role": "Administrator",
+      "department": "Admin",
+      "phone": "7654321005",
+      "shift": "morning",
+      "created_at": "2026-03-27 20:06:38"
+    }
+  ],
+  "medical_records": [
+    {
+      "record_id": 1,
+      "patient_id": 1,
+      "doctor_id": 1,
+      "visit_date": "2026-03-25 01:36:38.311920",
+      "diagnosis": "Hypertension",
+      "prescription": "Amlodipine 5mg daily, Lisinopril 10mg",
+      "notes": "BP reading: 140/90",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "record_id": 2,
+      "patient_id": 2,
+      "doctor_id": 2,
+      "visit_date": "2026-03-26 01:36:38.311920",
+      "diagnosis": "Migraine",
+      "prescription": "Sumatriptan 50mg as needed",
+      "notes": "Triggered by stress",
+      "created_at": "2026-03-27 20:06:38"
+    },
+    {
+      "record_id": 3,
+      "patient_id": 3,
+      "doctor_id": 3,
+      "visit_date": "2026-03-22 01:36:38.311920",
+      "diagnosis": "Fracture Recovery",
+      "prescription": "Physiotherapy 3x weekly",
+      "notes": "Good progress",
+      "created_at": "2026-03-27 20:06:38"
+    }
+  ]
+}
